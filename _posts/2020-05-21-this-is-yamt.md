@@ -9,5 +9,4 @@ description: "Welcome to YAMT - Yet Another Minimal Theme."
 改变自己123
 
 * hello
-{:toc}
 
