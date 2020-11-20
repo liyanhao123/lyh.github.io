@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: 我的第一篇博客
 layout: post
 categories: [How-To, Markdown]
 image: /assets/img/airplane.jpg
