@@ -6,4 +6,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 [editor on GitHub](https://github.com/liyanhao123/lyh.github.io/edit/master/index.html) 
 
+
+
+
+### 越努力，越幸运！
+
 ### 加油！
