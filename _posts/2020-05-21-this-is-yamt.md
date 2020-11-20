@@ -2,7 +2,7 @@
 title: This is My First 博客!
 layout: post
 categories: [Typography, Markdown, Tips]
-image: /_posts/images/SteveJobs.jpg
+image: /assets/img/logo.jpg
 description: "Welcome to YAMT - Yet Another Minimal Theme."
 ---
 
