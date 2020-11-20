@@ -4,8 +4,8 @@ description: "李炎昊的博客"
 url:  "https://yamt.netlify.app" # Actual base url of the website
 baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
-  name: "Alessio Franceschi"
-  email: "alessiofranceschi2@gmail.com"
+  name: "Lyh"
+  email: "954050674@qq.com"
   url: "https://alessiofranceschi.me"
 permalink: /:year/:month/:day/:title:output_ext
 
