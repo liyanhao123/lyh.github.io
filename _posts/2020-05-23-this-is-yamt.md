@@ -1,29 +1,49 @@
 ---
-title: This is YAMT!
+title: 2020-11-20-初读《你不知道的JavaScript》
 layout: post
+tags: 理解,总结,
 categories: [Typography, Markdown, Tips]
 image: /assets/img/logo.jpg
 description: "Welcome to YAMT - Yet Another Minimal Theme."
 ---
 
-Welcome to YAMT - Yet Another Minimal Theme. YAMT is a minimal Jekyll theme focused on simplicity and ease-of-use. It has great modularity, allowing you to easily decide what you actually want on your website.
+《你不知道的JavaScript》上部
 
 * hello
 {:toc}
 
-## Features 
-- Minimal and clean design.
-- Fully modular: activate and load only what you really need.
-- Works great on mobile and smaller screens.
-- Supports [Disqus](https://disqus.com/) comments activated only on button press, if you activate them.
-- [Google Analytics](https://www.google.com/analytics/) support.
-- [Open Graph](https://ogp.me/) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started) support to better index the website content on search engines and social networks.
-- [MathJAX](https://www.mathjax.org/) and [LaTeX](https://www.latex-project.org/) optional support. Write beautiful math!
-- [RSS](https://github.com/jekyll/jekyll-feed) support.
-- Beautiful [Syntax Highlight](https://yamt.netlify.app/2020/05/19/special-formatting.html#syntax-highlight). Write some code and show it in a graceful way.
+### 上部：主要概述作用域、
 
-## Installation
-[Read here](https://github.com/PandaSekh/Jekyll-YAMT#installation).
+词法作用域是一套关于引擎如何寻找变量以及会在何处找到变量的规则。
 
-## Customization
-[Read here](https://github.com/PandaSekh/Jekyll-YAMT#customize).
+JavaScript并不具备动态作用域，但是this的机制很像动态作用域。
+
+##### 作用域主要分为两大类
+
+1、引擎：负责编译和执行的过程
+
+2、编译器：词法解析、语法分析、代码生成
+
+为什么区分LHS和RHS是一件重要的事情？
+在非严格模式下，LHS 调用查找不到变量时会创建一个全局变量，RHS 查找不到变量时会抛出 ReferenceError。 在严格模式下，LHS 和 RHS 查找不到变量时都会抛出 ReferenceError。
+
+LHS:赋值操作的目标           目的 ：给变量赋值
+
+RHS:谁是赋值操作的源头   目的：获取变量的值
+
+私有化处理：将方法和变量都放在一个函数中
+立刻执行函数表达式（表达式）（）括号内可以传参
+
+##### 提升
+
+先有蛋（声明）后有鸡（赋值）
+
+只有声明本身会提升，而赋值或其他运行逻辑会留在原地
+
+函数优先，先提升，然后变量提升（同名的后面覆盖前面的）
+
+##### 模块具备的两个条件
+
+1、必须有外部的封闭函数，该函数必须至少被调用一次（每一次调用都会创建一个新的模块实例）
+
+2、封闭函数必须返回至少一个内部函数，这样内部函数才能在私有作用域中形成闭包，并且可以访问或者修改私有的状态
