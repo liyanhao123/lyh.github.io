@@ -2,11 +2,11 @@
 title: This is My First 博客!
 layout: post
 categories: [Typography, Markdown, Tips]
-image: /assets/img/logo.jpg
+# image: /assets/img/logo.jpg
 description: "Welcome to YAMT - Yet Another Minimal Theme."
 ---
 
-Welcome to YAMT - Yet Another Minimal Theme. YAMT is a minimal Jekyll theme focused on simplicity and ease-of-use. It has great modularity, allowing you to easily decide what you actually want on your website.
+改变自己
 
 * hello
 {:toc}
