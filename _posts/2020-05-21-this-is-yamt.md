@@ -1,5 +1,5 @@
 ---
-title: This is YAMT!
+title: This is My First 博客!
 layout: post
 categories: [Typography, Markdown, Tips]
 image: /assets/img/logo.jpg
